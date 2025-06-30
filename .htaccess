@@ -1,0 +1,169 @@
+# ========================================
+# Rahall.net - Enhanced .htaccess Configuration
+# ========================================
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# ========================================
+# SECURITY ENHANCEMENTS
+# ========================================
+
+# Hide server information
+ServerTokens Prod
+ServerSignature Off
+
+# Prevent access to sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|conf)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Block access to hidden files and directories
+<FilesMatch "^\.">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Protect against XSS attacks
+<IfModule mod_headers.c>
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ========================================
+# PERFORMANCE & CACHING
+# ========================================
+
+# Enable compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS and JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # Fonts
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# ========================================
+# ROUTING & URL REWRITING
+# ========================================
+
+# Set default page for root directory
+DirectoryIndex home.html
+
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Language-specific routing
+RewriteRule ^en/?$ pages/en/home.html [L]
+RewriteRule ^ar/?$ pages/ar/home-ar.html [L]
+RewriteRule ^en/demo/?$ pages/en/demo.html [L]
+RewriteRule ^ar/demo/?$ pages/ar/demo.html [L]
+
+# Handle language switching
+RewriteRule ^home-ar/?$ pages/ar/home-ar.html [L]
+RewriteRule ^Demo-en/?$ pages/en/demo.html [L]
+
+# ========================================
+# ERROR PAGES
+# ========================================
+
+# Custom error pages
+ErrorDocument 404 /pages/en/home.html
+ErrorDocument 500 /pages/en/home.html
+
+# ========================================
+# SEO & REDIRECTS
+# ========================================
+
+# Redirect www to non-www (or vice versa if preferred)
+# RewriteCond %{HTTP_HOST} ^www\.rahall\.net [NC]
+# RewriteRule ^(.*)$ https://rahall.net/$1 [L,R=301]
+
+# Force HTTPS (uncomment when SSL is available)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ========================================
+# ASSET OPTIMIZATION
+# ========================================
+
+# Serve assets with proper MIME types
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType text/css .css
+    AddType image/svg+xml .svg
+    AddType application/font-woff .woff
+    AddType application/font-woff2 .woff2
+</IfModule>
+
+# ========================================
+# MOBILE OPTIMIZATION
+# ========================================
+
+# Ensure proper viewport for mobile devices
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|htm)$">
+        Header set X-UA-Compatible "IE=edge,chrome=1"
+    </FilesMatch>
+</IfModule>
+
+# ========================================
+# SECURITY HEADERS FOR BUILD FILES
+# ========================================
+
+# Protect build directory
+<Directory "build">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "public, max-age=31536000"
+    </IfModule>
+</Directory>
+
+# ========================================
+# LOGGING (Optional - for debugging)
+# ========================================
+
+# Custom log format for better analysis
+LogFormat "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
