@@ -70,7 +70,7 @@
     border-radius: calc(.5rem - 2px);
     border-width: 1px;
     --tw-border-opacity: 1;
-    border-color: rgb(226 224 214/var(--tw-border-opacity, 1));
+    border-color: rgb(245 245 245/var(--tw-border-opacity, 1));
     padding: .5rem;
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
@@ -80,8 +80,8 @@
 .input:focus {
     --tw-border-opacity: 1;
     border-color: rgb(85 245 163/var(--tw-border-opacity, 1));
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(85 245 163/var(--tw-ring-opacity, 1))
@@ -107,8 +107,8 @@
 .button:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(85 245 163/var(--tw-ring-opacity, 1));
@@ -130,8 +130,8 @@
 .button-large:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(85 245 163/var(--tw-ring-opacity, 1));
@@ -141,23 +141,23 @@
 .button-transparent {
     border-width: 2px;
     --tw-border-opacity: 1;
-    border-color: rgb(0 0 0/var(--tw-border-opacity, 1));
+    border-color: rgb(30 30 30/var(--tw-border-opacity, 1));
     background-color: transparent;
     --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity, 1))
+    color: rgb(30 30 30/var(--tw-text-opacity, 1))
 }
 
 .button-transparent:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(85 245 163/var(--tw-bg-opacity, 1));
     --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity, 1))
+    color: rgb(30 30 30/var(--tw-text-opacity, 1))
 }
 
 .button-black {
     border-width: 2px;
     --tw-border-opacity: 1;
-    border-color: rgb(0 0 0/var(--tw-border-opacity, 1))
+    border-color: rgb(30 30 30/var(--tw-border-opacity, 1))
 }
 
 .button-black:hover,
@@ -165,12 +165,12 @@
     --tw-bg-opacity: 1;
     background-color: rgb(85 245 163/var(--tw-bg-opacity, 1));
     --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity, 1))
+    color: rgb(30 30 30/var(--tw-text-opacity, 1))
 }
 
 .button-green:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0/var(--tw-bg-opacity, 1));
+    background-color: rgb(30 30 30/var(--tw-bg-opacity, 1));
     --tw-text-opacity: 1;
     color: rgb(255 255 255/var(--tw-text-opacity, 1))
 }
@@ -180,7 +180,7 @@
     border-radius: 9999px;
     border-width: 1px;
     --tw-border-opacity: 1;
-    border-color: rgb(226 224 214/var(--tw-border-opacity, 1));
+    border-color: rgb(245 245 245/var(--tw-border-opacity, 1));
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255/var(--tw-bg-opacity, 1));
     padding: .5rem 1rem;
@@ -199,23 +199,23 @@
 
 .btnTertiaryActive:hover {
     --tw-border-opacity: 1;
-    border-color: rgb(0 0 0/var(--tw-border-opacity, 1))
+    border-color: rgb(30 30 30/var(--tw-border-opacity, 1))
 }
 
 .btnTertiaryActive:focus,
 .btnTertiaryActive:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(245 243 235/var(--tw-bg-opacity, 1))
+    background-color: rgb(255 255 255/var(--tw-bg-opacity, 1))
 }
 
 .btnTertiaryActive:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(0 0 0/var(--tw-ring-opacity, 1))
+    --tw-ring-color: rgb(30 30 30/var(--tw-ring-opacity, 1))
 }
 
 .headline {
@@ -1288,8 +1288,8 @@ textarea:focus {
     --tw-ring-offset-width: 0px;
     --tw-ring-offset-color: #fff;
     --tw-ring-color: #2563eb;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     border-color: #2563eb
 }
@@ -1396,8 +1396,8 @@ select {
     --tw-ring-offset-width: 2px;
     --tw-ring-offset-color: #fff;
     --tw-ring-color: #2563eb;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
 }
 
@@ -1544,8 +1544,8 @@ select {
     --tw-ring-offset-width: 0px;
     --tw-ring-offset-color: #fff;
     --tw-ring-color: #2563eb;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     border-color: #2563eb
 }
@@ -3523,7 +3523,7 @@ select {
 
 .divide-ash>:not([hidden])~:not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgb(226 224 214/var(--tw-divide-opacity, 1))
+    border-color: rgb(245 245 245/var(--tw-divide-opacity, 1))
 }
 
 .self-center {
@@ -3820,21 +3820,21 @@ select {
 
 .border-ash {
     --tw-border-opacity: 1;
-    border-color: rgb(226 224 214/var(--tw-border-opacity, 1))
+    border-color: rgb(245 245 245/var(--tw-border-opacity, 1))
 }
 
 .border-black {
     --tw-border-opacity: 1;
-    border-color: rgb(0 0 0/var(--tw-border-opacity, 1))
+    border-color: rgb(30 30 30/var(--tw-border-opacity, 1))
 }
 
 .border-black\/20 {
-    border-color: rgb(0 0 0/.2)
+    border-color: rgb(30 30 30/.2)
 }
 
 .border-bone {
     --tw-border-opacity: 1;
-    border-color: rgb(245 243 235/var(--tw-border-opacity, 1))
+    border-color: rgb(255 255 255/var(--tw-border-opacity, 1))
 }
 
 .border-border\/50 {
@@ -3902,7 +3902,7 @@ select {
 
 .bg-ash {
     --tw-bg-opacity: 1;
-    background-color: rgb(226 224 214/var(--tw-bg-opacity, 1))
+    background-color: rgb(245 245 245/var(--tw-bg-opacity, 1))
 }
 
 .bg-background {
@@ -3912,20 +3912,20 @@ select {
 
 .bg-black {
     --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0/var(--tw-bg-opacity, 1))
+    background-color: rgb(30 30 30/var(--tw-bg-opacity, 1))
 }
 
 .bg-black\/10 {
-    background-color: rgb(0 0 0/.1)
+    background-color: rgb(30 30 30/.1)
 }
 
 .bg-black\/80 {
-    background-color: rgb(0 0 0/.8)
+    background-color: rgb(30 30 30/.8)
 }
 
 .bg-blackBG {
     --tw-bg-opacity: 1;
-    background-color: rgb(17 17 17/var(--tw-bg-opacity, 1))
+    background-color: rgb(30 30 30/var(--tw-bg-opacity, 1))
 }
 
 .bg-blue {
@@ -3935,7 +3935,9 @@ select {
 
 .bg-bone {
     --tw-bg-opacity: 1;
-    background-color: rgb(245 243 235/var(--tw-bg-opacity, 1))
+    /* background-color: rgb(255 255 255/var(--tw-bg-opacity, 1)) */
+        background-color: rgb(255 255 255/var(--tw-bg-opacity, 1))
+
 }
 
 .bg-border {
@@ -4057,7 +4059,7 @@ select {
 
 .bg-white {
     --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity, 1))
+    background-color: rgb(245 245 245/var(--tw-bg-opacity, 1))
 }
 
 .bg-yellow {
@@ -4139,7 +4141,7 @@ select {
 
 .from-bone {
     --tw-gradient-from: #F5F3EB var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(245 243 235/0) var(--tw-gradient-to-position);
+    --tw-gradient-to: rgb(255 255 255/0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
 }
 
@@ -4151,7 +4153,7 @@ select {
 
 .from-transparent {
     --tw-gradient-from: transparent var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(0 0 0/0) var(--tw-gradient-to-position);
+    --tw-gradient-to: rgb(30 30 30/0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
 }
 
@@ -4168,7 +4170,7 @@ select {
 }
 
 .via-ash {
-    --tw-gradient-to: rgb(226 224 214/0) var(--tw-gradient-to-position);
+    --tw-gradient-to: rgb(245 245 245/0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), #E2E0D6 var(--tw-gradient-via-position), var(--tw-gradient-to)
 }
 
@@ -4963,15 +4965,15 @@ select {
 
 .text-black {
     --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity, 1))
+    color: rgb(30 30 30/var(--tw-text-opacity, 1))
 }
 
 .text-black\/50 {
-    color: rgb(0 0 0/.5)
+    color: rgb(30 30 30/.5)
 }
 
 .text-black\/70 {
-    color: rgb(0 0 0/.7)
+    color: rgb(30 30 30/.7)
 }
 
 .text-brand-accent {
@@ -5170,7 +5172,7 @@ select {
 }
 
 .shadow {
-    --tw-shadow: 0 1px 3px 0 rgb(0 0 0/0.1), 0 1px 2px -1px rgb(0 0 0/0.1);
+    --tw-shadow: 0 1px 3px 0 rgb(30 30 30/0.1), 0 1px 2px -1px rgb(30 30 30/0.1);
     --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color)
 }
 
@@ -5195,12 +5197,12 @@ select {
 }
 
 .shadow-lg {
-    --tw-shadow: 0 10px 15px -3px rgb(0 0 0/0.1), 0 4px 6px -4px rgb(0 0 0/0.1);
+    --tw-shadow: 0 10px 15px -3px rgb(30 30 30/0.1), 0 4px 6px -4px rgb(30 30 30/0.1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color)
 }
 
 .shadow-md {
-    --tw-shadow: 0 4px 6px -1px rgb(0 0 0/0.1), 0 2px 4px -2px rgb(0 0 0/0.1);
+    --tw-shadow: 0 4px 6px -1px rgb(30 30 30/0.1), 0 2px 4px -2px rgb(30 30 30/0.1);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color)
 }
 
@@ -5215,7 +5217,7 @@ select {
 }
 
 .shadow-sm {
-    --tw-shadow: 0 1px 2px 0 rgb(0 0 0/0.05);
+    --tw-shadow: 0 1px 2px 0 rgb(30 30 30/0.05);
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color)
 }
 
@@ -5225,7 +5227,7 @@ select {
 }
 
 .shadow-xl {
-    --tw-shadow: 0 20px 25px -5px rgb(0 0 0/0.1), 0 8px 10px -6px rgb(0 0 0/0.1);
+    --tw-shadow: 0 20px 25px -5px rgb(30 30 30/0.1), 0 8px 10px -6px rgb(30 30 30/0.1);
     --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color)
 }
 
@@ -5239,8 +5241,8 @@ select {
 }
 
 .ring {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color)
 }
 
 .ring,
@@ -5249,13 +5251,13 @@ select {
 }
 
 .ring-0 {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color)
 }
 
 .ring-1 {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
 }
 
@@ -5265,12 +5267,12 @@ select {
 
 .ring-ash {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(226 224 214/var(--tw-ring-opacity, 1))
+    --tw-ring-color: rgb(245 245 245/var(--tw-ring-opacity, 1))
 }
 
 .ring-black {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(0 0 0/var(--tw-ring-opacity, 1))
+    --tw-ring-color: rgb(30 30 30/var(--tw-ring-opacity, 1))
 }
 
 .ring-offset-background {
@@ -5304,7 +5306,7 @@ select {
 }
 
 .drop-shadow {
-    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0/0.1)) drop-shadow(0 1px 1px rgb(0 0 0/0.06))
+    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(30 30 30/0.1)) drop-shadow(0 1px 1px rgb(30 30 30/0.06))
 }
 
 .drop-shadow,
@@ -5528,14 +5530,14 @@ select {
 
 body {
     --tw-bg-opacity: 1;
-    background-color: rgb(245 243 235/var(--tw-bg-opacity, 1))
+    background-color: rgb(255 255 255/var(--tw-bg-opacity, 1))
 }
 
 .link {
     cursor: pointer;
     border-bottom-width: 1px;
     --tw-border-opacity: 1;
-    border-color: rgb(0 0 0/var(--tw-border-opacity, 1));
+    border-color: rgb(30 30 30/var(--tw-border-opacity, 1));
     transition-duration: .3s;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     animation-duration: .3s;
@@ -5622,13 +5624,13 @@ tbody tr:first-child td:last-child {
 tr td:first-child {
     border-left-width: 1px;
     --tw-border-opacity: 1;
-    border-color: rgb(226 224 214/var(--tw-border-opacity, 1))
+    border-color: rgb(245 245 245/var(--tw-border-opacity, 1))
 }
 
 tr td:last-child {
     border-right-width: 1px;
     --tw-border-opacity: 1;
-    border-color: rgb(226 224 214/var(--tw-border-opacity, 1))
+    border-color: rgb(245 245 245/var(--tw-border-opacity, 1))
 }
 
 tr:last-child td:first-child {
@@ -5646,7 +5648,7 @@ tr:last-child td {
 td {
     border-top-width: 1px;
     --tw-border-opacity: 1;
-    border-color: rgb(226 224 214/var(--tw-border-opacity, 1));
+    border-color: rgb(245 245 245/var(--tw-border-opacity, 1));
     padding: .625rem;
     font-size: 14px;
     line-height: 18px;
@@ -5670,12 +5672,12 @@ ol li:before {
     justify-content: center;
     border-radius: 9999px;
     --tw-bg-opacity: 1;
-    background-color: rgb(226 224 214/var(--tw-bg-opacity, 1));
+    background-color: rgb(245 245 245/var(--tw-bg-opacity, 1));
     font-size: 12px;
     line-height: 16px;
     font-weight: 500;
     --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity, 1));
+    color: rgb(30 30 30/var(--tw-text-opacity, 1));
     content: counter(section) !important;
     content: var(--tw-content);
     counter-increment: section
@@ -5739,7 +5741,7 @@ input::placeholder {
     border-radius: .5rem;
     border-width: 1px;
     --tw-border-opacity: 1;
-    border-color: rgb(226 224 214/var(--tw-border-opacity, 1));
+    border-color: rgb(245 245 245/var(--tw-border-opacity, 1));
     padding-top: .625rem;
     padding-bottom: .625rem;
     font-size: 14px;
@@ -5747,27 +5749,27 @@ input::placeholder {
 }
 
 .baseInput::-moz-placeholder {
-    color: rgb(0 0 0/var(--tw-placeholder-opacity, 1));
+    color: rgb(30 30 30/var(--tw-placeholder-opacity, 1));
     --tw-placeholder-opacity: 0.3
 }
 
 .baseInput::placeholder {
-    color: rgb(0 0 0/var(--tw-placeholder-opacity, 1));
+    color: rgb(30 30 30/var(--tw-placeholder-opacity, 1));
     --tw-placeholder-opacity: 0.3
 }
 
 .baseInput:focus,
 .baseInput:hover {
     --tw-border-opacity: 1;
-    border-color: rgb(226 224 214/var(--tw-border-opacity, 1))
+    border-color: rgb(245 245 245/var(--tw-border-opacity, 1))
 }
 
 .baseInput:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(245 243 235/var(--tw-ring-opacity, 1))
+    --tw-ring-color: rgb(255 255 255/var(--tw-ring-opacity, 1))
 }
 
 .baseInputWithError {
@@ -5804,7 +5806,7 @@ input::placeholder {
     display: flex;
     width: 100%;
     border-radius: 9999px;
-    background-color: rgb(0 0 0/var(--tw-bg-opacity, 1));
+    background-color: rgb(30 30 30/var(--tw-bg-opacity, 1));
     padding-top: .75rem;
     padding-bottom: .75rem;
     padding-left: 1.25rem;
@@ -5825,14 +5827,14 @@ input::placeholder {
 
 .btn:hover {
     background-color: rgb(85 245 163/var(--tw-bg-opacity, 1));
-    color: rgb(0 0 0/var(--tw-text-opacity, 1))
+    color: rgb(30 30 30/var(--tw-text-opacity, 1))
 }
 
 .btn:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(85 245 163/var(--tw-ring-opacity, 1));
@@ -5868,7 +5870,7 @@ input::placeholder {
 .button-black-arrow {
     position: relative;
     --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0/var(--tw-bg-opacity, 1));
+    background-color: rgb(135 114 255/var(--tw-bg-opacity, 1));
     padding: .5rem 1.5rem;
     --tw-text-opacity: 1;
     color: rgb(255 255 255/var(--tw-text-opacity, 1))
@@ -5876,8 +5878,8 @@ input::placeholder {
 
 .button-black-arrow:focus {
     outline-width: 0;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-offset-width: 0px
 }
@@ -5887,13 +5889,21 @@ input::placeholder {
     background-color: rgb(255 255 255/.9);
     padding: .5rem 1.5rem;
     --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity, 1))
+    color: rgb(30 30 30/var(--tw-text-opacity, 1))
+}
+
+.button-khalil {
+    position: relative;
+    background-color: rgb(30 30 30/.9);
+    padding: .5rem 1.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity, 1))
 }
 
 .button-white-arrow:focus {
     outline-width: 0;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-offset-width: 0px
 }
@@ -5901,16 +5911,16 @@ input::placeholder {
 .button-ash-arrow {
     position: relative;
     --tw-bg-opacity: 1;
-    background-color: rgb(226 224 214/var(--tw-bg-opacity, 1));
+    background-color: rgb(245 245 245/var(--tw-bg-opacity, 1));
     padding: .5rem 1.5rem;
     --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity, 1))
+    color: rgb(30 30 30/var(--tw-text-opacity, 1))
 }
 
 .button-ash-arrow:focus {
     outline-width: 0;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-offset-width: 0px
 }
@@ -5995,7 +6005,7 @@ input::placeholder {
 
 .checked\:bg-black:checked {
     --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0/var(--tw-bg-opacity, 1))
+    background-color: rgb(30 30 30/var(--tw-bg-opacity, 1))
 }
 
 .hover\:w-max:hover {
@@ -6022,7 +6032,7 @@ input::placeholder {
 
 .hover\:border-black:hover {
     --tw-border-opacity: 1;
-    border-color: rgb(0 0 0/var(--tw-border-opacity, 1))
+    border-color: rgb(30 30 30/var(--tw-border-opacity, 1))
 }
 
 .hover\:border-gray-400:hover {
@@ -6046,7 +6056,7 @@ input::placeholder {
 
 .hover\:\!bg-ash:hover {
     --tw-bg-opacity: 1 !important;
-    background-color: rgb(226 224 214/var(--tw-bg-opacity, 1)) !important
+    background-color: rgb(245 245 245/var(--tw-bg-opacity, 1)) !important
 }
 
 .hover\:bg-accent:hover {
@@ -6056,17 +6066,17 @@ input::placeholder {
 
 .hover\:bg-ash:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(226 224 214/var(--tw-bg-opacity, 1))
+    background-color: rgb(245 245 245/var(--tw-bg-opacity, 1))
 }
 
 .hover\:bg-black:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0/var(--tw-bg-opacity, 1))
+    background-color: rgb(30 30 30/var(--tw-bg-opacity, 1))
 }
 
 .hover\:bg-bone:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(245 243 235/var(--tw-bg-opacity, 1))
+    background-color: rgb(255 255 255/var(--tw-bg-opacity, 1))
 }
 
 .hover\:bg-clay:hover {
@@ -6166,7 +6176,7 @@ input::placeholder {
 
 .hover\:text-black:hover {
     --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity, 1))
+    color: rgb(30 30 30/var(--tw-text-opacity, 1))
 }
 
 .hover\:text-gray-700:hover {
@@ -6246,7 +6256,7 @@ input::placeholder {
 
 .focus\:border-black:focus {
     --tw-border-opacity: 1;
-    border-color: rgb(0 0 0/var(--tw-border-opacity, 1))
+    border-color: rgb(30 30 30/var(--tw-border-opacity, 1))
 }
 
 .focus\:border-green:focus {
@@ -6261,12 +6271,12 @@ input::placeholder {
 
 .focus\:bg-ash:focus {
     --tw-bg-opacity: 1;
-    background-color: rgb(226 224 214/var(--tw-bg-opacity, 1))
+    background-color: rgb(245 245 245/var(--tw-bg-opacity, 1))
 }
 
 .focus\:bg-bone:focus {
     --tw-bg-opacity: 1;
-    background-color: rgb(245 243 235/var(--tw-bg-opacity, 1))
+    background-color: rgb(255 255 255/var(--tw-bg-opacity, 1))
 }
 
 .focus\:text-accent-foreground:focus {
@@ -6280,8 +6290,8 @@ input::placeholder {
 }
 
 .focus\:ring-0:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color)
 }
 
 .focus\:ring-0:focus,
@@ -6290,19 +6300,19 @@ input::placeholder {
 }
 
 .focus\:ring-1:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color)
 }
 
 .focus\:ring-2:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
 }
 
 .focus\:ring-black:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(0 0 0/var(--tw-ring-opacity, 1))
+    --tw-ring-color: rgb(30 30 30/var(--tw-ring-opacity, 1))
 }
 
 .focus\:ring-green:focus {
@@ -6347,8 +6357,8 @@ input::placeholder {
 }
 
 .focus-visible\:ring-1:focus-visible {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
 }
 
@@ -6372,7 +6382,7 @@ input::placeholder {
 
 .disabled\:bg-bone:disabled {
     --tw-bg-opacity: 1;
-    background-color: rgb(245 243 235/var(--tw-bg-opacity, 1))
+    background-color: rgb(255 255 255/var(--tw-bg-opacity, 1))
 }
 
 .disabled\:opacity-50:disabled {
@@ -6437,22 +6447,22 @@ input::placeholder {
 
 .group:hover .group-hover\:border-bone {
     --tw-border-opacity: 1;
-    border-color: rgb(245 243 235/var(--tw-border-opacity, 1))
+    border-color: rgb(255 255 255/var(--tw-border-opacity, 1))
 }
 
 .group:hover .group-hover\:bg-ash {
     --tw-bg-opacity: 1;
-    background-color: rgb(226 224 214/var(--tw-bg-opacity, 1))
+    background-color: rgb(245 245 245/var(--tw-bg-opacity, 1))
 }
 
 .group:hover .group-hover\:bg-black {
     --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0/var(--tw-bg-opacity, 1))
+    background-color: rgb(30 30 30/var(--tw-bg-opacity, 1))
 }
 
 .group:hover .group-hover\:bg-bone {
     --tw-bg-opacity: 1;
-    background-color: rgb(245 243 235/var(--tw-bg-opacity, 1))
+    background-color: rgb(255 255 255/var(--tw-bg-opacity, 1))
 }
 
 .group:hover .group-hover\:bg-opacity-10 {
@@ -6461,7 +6471,7 @@ input::placeholder {
 
 .group:hover .group-hover\:text-black {
     --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity, 1))
+    color: rgb(30 30 30/var(--tw-text-opacity, 1))
 }
 
 .group:hover .group-hover\:opacity-0 {
@@ -7609,12 +7619,12 @@ input::placeholder {
 
     .lg\:hover\:border-black:hover {
         --tw-border-opacity: 1;
-        border-color: rgb(0 0 0/var(--tw-border-opacity, 1))
+        border-color: rgb(30 30 30/var(--tw-border-opacity, 1))
     }
 
     .lg\:focus\:ring-1:focus {
-        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 30 30 30 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 30 30 30 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
         box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
     }
 }
